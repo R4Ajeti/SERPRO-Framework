@@ -5,6 +5,15 @@
     justify-content: space-between;
     align-items: center;
   }
+  .floatN2{
+    height: 50px;
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: center; /* Safari 6.1+ */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #b9e7ee;
+  }
   .header {
     overflow: hidden;
     padding: 0px 15px;
@@ -46,7 +55,7 @@
   }
 
   .midNav{
-      padding: 30px 0;
+    padding: 30px 0;
   }
   
   #logo {
@@ -68,5 +77,16 @@
     
     .header-right {
       float: none;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .header{
+        background-color: transparent;
+    }
+    .floatN .mid{
+        display: none;
+    }
+    .floatN2{
+        display: flex;
     }
   }
