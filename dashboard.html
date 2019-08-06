@@ -3,10 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title> Free SERP checker - google ranking check | serprobot.com </title>
+        <!--
+            SEO thing
+            Start
+        -->
         <meta name="description" content="Free SERP check, track and monitor your search engine keyword ranking quickly and accurately">
         <meta name="keywords" content="serp checker, keyword tool, seo serp, seo tool, serp history, serp page rank" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--
+            SEO thing
+            End
+        -->
         <link rel="shortcut icon" type="image/x-icon" href="https://www.serprobot.com/favicon.ico">
+        <!--
+            Bootstrap thing
+            Start
+        -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <!--
+            Bootstrap thing
+            End
+        -->
+        <link rel="stylesheet" href="css/framework.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/wrapper.css">
         <link rel="stylesheet" href="css/header.css">
@@ -14,9 +32,28 @@
     </head>
     <body>
     <header>
-        <leftNav></leftNav>
-        <rightNav></rightNav>
-        <midNav></midNav>
+        <div id="header" class="header">
+            <div class="floatN">
+                <div class="left">
+                <div class="supportUs">
+                    <button type="submit" class="btn btn-success navbar-btn" title="Make your SERP bot smile!">Support us</button>
+                </div>
+                </div>
+                <div class="center">
+                <div id="announcement" class="text-white">
+                        <strong>News:</strong> SERPLAB.co.uk is now SERPROBOT.com! - <a class="announc" href="#">more information</a></div>
+                </div>
+                <div class="right">
+                <button type="submit" class="btn btn-default navbar-btn">My dashboard</button>
+                <button type="submit" class="btn btn-info navbar-btn" title="Bye! Come back soon!">Log out</button>
+                </div>
+            </div>
+        </div>
+        <midNav>
+            <div id="midNav" class="midNav">
+                <a href="https://www.serprobot.com" id="logo" title="SERPROBOT - the best free SERP checker!"><span class="announc" id="beta">BETA</span></a>
+            </div>
+        </midNav>
     </header>
 
     <wrapper>
