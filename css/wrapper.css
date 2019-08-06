@@ -1,0 +1,12 @@
+.txt-darkred {
+    color: #c22800;
+  }
+.clearfix:before,.clearfix:after{
+    display:table;
+    content:" ";
+}.clearfix:after{
+    clear:both;
+}.row{
+    margin-right: 255px;
+    margin-left: 255px;
+}
