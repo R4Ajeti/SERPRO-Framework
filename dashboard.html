@@ -24,7 +24,7 @@
             Bootstrap thing
             End
         -->
-        <link href="https://www.serprobot.com/css/main8.min.css" rel="stylesheet">
+        
         <link rel="stylesheet" href="css/framework.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/wrapper.css">
@@ -68,7 +68,7 @@
     </header>
 
     <wrapper>
-
+        
         <front>
             <!-- Data manipulation buttons-->
             <dmb>
@@ -84,6 +84,7 @@
             </dmb>
             <messageNav>
                 <div class="alert alert-info alert-dismissable text-center">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                             <div class="margin-top-10">
                                 <strong>Do you want to set your timezone?</strong><br>
                                     It looks like you are using UTC as your timezone - we're pretty sure this should be something else!
@@ -107,6 +108,7 @@
                 
             </messageNav>
             <welcomeMessage>
+                <div >
                     <div class="alert alert-info alert-dismissable text-center">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                         <strong>Welcome To Your SERPROBOT Trial!</strong>
@@ -120,7 +122,9 @@
                         <div class="text-center margin-top-10">
                             If you have any questions then please contact us on <a class="announc" href="mailto:rinor4ever@gmail.com">info@serprobot.com</a>
                         </div>
+                    </div>
                 <div class="clearfix"></div>
+                </div>
             </welcomeMessage>
                     
             <infoNavs>
@@ -135,7 +139,288 @@
 
         <heart>
             <heartModel>
-                
+                <div >
+                    <div class="col-md-9">
+			
+                    </div>
+                    <div class="col-md-3">
+                            <form id="table-filter-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="table-filter" placeholder="Filter Projects">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">Go!</button>
+                                    </span>
+                                </div>
+                            </form>
+                    </div>
+
+                    <div class="table-responsive">
+                            <table id="projects-table" class="table table-hover table-striped tablesorter sortable tablesorter-default tablesorterf531e96f83476" role="grid">
+                                <thead>
+                                <tr role="row" class="tablesorter-headerRow">
+                                    <th data-column="0" class="tablesorter-header sorter-false tablesorter-headerUnSorted" scope="col" role="columnheader" aria-disabled="true" unselectable="on" aria-sort="none" aria-label=": No sort applied, sorting is disabled" style="user-select: none;"><div class="tablesorter-header-inner"><input type="checkbox" class="all-checkboxes"></div></th>
+                                    <th class="tablesorter-header tablesorter-headerAsc" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="projects-table" unselectable="on" aria-sort="ascending" aria-label="#: Ascending sort applied, activate to apply a descending sort" data-sortedby="sorton" style="user-select: none;"><div class="tablesorter-header-inner"><span>#</span></div></th>
+                                    <th data-column="2" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="projects-table" unselectable="on" aria-sort="none" aria-label="Project Name: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner"><span>Project Name</span></div></th>
+                                    <th data-column="3" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="projects-table" unselectable="on" aria-sort="none" aria-label="URL: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner"><span>URL</span></div></th>
+                                    <th data-column="4" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="projects-table" unselectable="on" aria-sort="none" aria-label="Region: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner"><span>Region</span></div></th>
+                                    <th data-column="5" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="projects-table" unselectable="on" aria-sort="none" aria-label="#Keywords: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner"><span title="Total Keywords (Improved, No Change, Worsened)">#Keywords</span></div></th>
+                                    <th data-column="6" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="projects-table" unselectable="on" aria-sort="none" aria-label="Frequency: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner"><span>Frequency</span></div></th>
+                                    <th data-column="7" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="projects-table" unselectable="on" aria-sort="none" aria-label="Updated: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner"><span>Updated</span></div></th>
+                                    <th style="display: none; user-select: none;" data-column="8" class="tablesorter-header sorter-false tablesorter-headerUnSorted" scope="col" role="columnheader" aria-disabled="true" unselectable="on" aria-sort="none" aria-label="Daily Average: No sort applied, sorting is disabled"><div class="tablesorter-header-inner"><span>Daily Average</span></div></th>
+                                    <th class="actions tablesorter-header sorter-false tablesorter-headerUnSorted" data-column="9" scope="col" role="columnheader" aria-disabled="true" unselectable="on" aria-sort="none" aria-label="Actions: No sort applied, sorting is disabled" style="user-select: none;"><div class="tablesorter-header-inner"><span>Actions</span></div></th>
+                                </tr>
+                                </thead>
+                                <tbody aria-live="polite" aria-relevant="all">
+                                                                                    
+                                
+                                                                                    
+                                
+                                
+                                <tr data-projectid="738448" class="sort_row " role="row">
+                                    <td><input type="checkbox" class="project-checkbox"></td>
+                                    <td class="clickable">1</td>
+                                    <td class="clickable">
+                                        <span class="filterable">test</span>
+                                                                                    <span class="jv-google red" title="google project"> </span>
+                                                        </td>
+                                    <td class="clickable">google.com</td>
+                                    <td class="clickable">www.google.com</td>
+                                    <td class="clickable"><strong class="">1</strong> (<span class="green">0</span> / <span>1</span> / <span class="red">0</span>)</td>
+                                    <td class="clickable">24 hours</td>
+                                    <td class="clickable">2019-08-06 21:11:22</td>
+                                    <td class="sparkline" style="display: none;"></td>
+                                    <td class="actions">
+                                        <span onclick="refresh_project('738448');" class="glyphicon glyphicon-refresh" title="refresh all keywords"></span>
+                                        <a href="project-details.php?id=738448" target="_blank" class="glyphicon glyphicon-new-window" title="open in new window"> </a>
+                                        <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="modal_738448"></div>
+                                        <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="modal1_738448"></div>
+                                                            <a data-toggle="modal" href="https://www.serprobot.com/user/process/show_project_alerts.php?id=738448" data-target="#modal_738448"><span class="glyphicon glyphicon-bell" title="view alerts"> </span></a>
+                                        <a data-toggle="modal" href="https://www.serprobot.com/user/process/show_project_tags.php?id=738448" data-target="#modal1_738448"><span class="glyphicon glyphicon-tags" title="view tags"> </span></a>
+                                                            <span onclick="delete_project('738448');" class="glyphicon glyphicon-trash" title="delete"></span>
+                                    </td>
+                                </tr><tr data-projectid="738449" class="sort_row " role="row">
+                                    <td><input type="checkbox" class="project-checkbox"></td>
+                                    <td class="clickable">2</td>
+                                    <td class="clickable">
+                                        <span class="filterable">Test2</span>
+                                                                                    <span class="jv-google red" title="google project"> </span>
+                                                        </td>
+                                    <td class="clickable">facebook.com</td>
+                                    <td class="clickable">www.google.com</td>
+                                    <td class="clickable"><strong class="green">1</strong> (<span class="green">1</span> / <span>0</span> / <span class="red">0</span>)</td>
+                                    <td class="clickable">24 hours</td>
+                                    <td class="clickable">2019-08-06 21:16:51</td>
+                                    <td class="sparkline" style="display: none;"></td>
+                                    <td class="actions">
+                                        <span onclick="refresh_project('738449');" class="glyphicon glyphicon-refresh" title="refresh all keywords"></span>
+                                        <a href="project-details.php?id=738449" target="_blank" class="glyphicon glyphicon-new-window" title="open in new window"> </a>
+                                        <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="modal_738449"></div>
+                                        <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="modal1_738449"></div>
+                                                            <a data-toggle="modal" href="https://www.serprobot.com/user/process/show_project_alerts.php?id=738449" data-target="#modal_738449"><span class="glyphicon glyphicon-bell" title="view alerts"> </span></a>
+                                        <a data-toggle="modal" href="https://www.serprobot.com/user/process/show_project_tags.php?id=738449" data-target="#modal1_738449"><span class="glyphicon glyphicon-tags" title="view tags"> </span></a>
+                                                            <span onclick="delete_project('738449');" class="glyphicon glyphicon-trash" title="delete"></span>
+                                    </td>
+                                </tr></tbody>
+                                <tfoot>
+                                <tr role="row">
+                                    <td class="info" data-column="0"><input type="checkbox" class="all-checkboxes"></td>
+                                    <td colspan="9" class="text-center info tablesorter-headerAsc" data-column="1" aria-sort="ascending">
+                                        <div class="col-md-11">
+                                            <a href="#" id="refresh-projects-button" role="button" class="btn btn-default btn-sm">
+                                                <span class="glyphicon glyphicon-refresh"></span> Refresh
+                                            </a>
+                                            <a href="#" id="toggle-sortable" role="button" class="btn btn-default btn-sm">
+                                                <span class="glyphicon glyphicon-move"></span> Reorder
+                                            </a>
+                                            <a href="#" id="export-projects-button" role="button" class="btn btn-default btn-sm">
+                                                <span class="glyphicon glyphicon glyphicon-export"></span> Export
+                                            </a>
+                                            <a data-toggle="modal" href="/user/process/show_bulk_project_tags.php?id=" data-target="#modal_bulk_project_tags" id="bulk-tags" role="button" class="btn btn-default btn-sm">
+                                                <span class="glyphicon glyphicon-tags"></span> Edit tags
+                                            </a>
+                                            <a href="#" id="delete-projects-button" role="button" class="btn btn-default btn-sm">
+                                                <span class="glyphicon glyphicon-trash"></span> Delete
+                                            </a>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <div class="button-group text-left dropup">
+                                                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                    <span class="glyphicon glyphicon-cog"></span> <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" id="row_settings">
+                                                    <li class="text-center">Hidden Columns</li>
+                                                    <li role="separator" class="divider"></li>
+                                                                                                                        <li><a href="#" class="small" data-value="4" tabindex="-1"><input type="checkbox">&nbsp;URL</a></li>
+                                                                                        <li><a href="#" class="small" data-value="5" tabindex="-1"><input type="checkbox">&nbsp;Region</a></li>
+                                                                                        <li><a href="#" class="small" data-value="6" tabindex="-1"><input type="checkbox">&nbsp;#Keywords</a></li>
+                                                                                        <li><a href="#" class="small" data-value="7" tabindex="-1"><input type="checkbox">&nbsp;Frequency</a></li>
+                                                                                        <li><a href="#" class="small" data-value="8" tabindex="-1"><input type="checkbox">&nbsp;Updated</a></li>
+                                                                                        <li><a href="#" class="small" data-value="9" tabindex="-1"><input type="checkbox" checked="checked">&nbsp;Daily Average</a></li>
+                                                    
+                                                    <li role="separator" class="divider"></li>
+                                                    <li class="text-center"><button type="button" id="hidden-col-save"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                            <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="modal_bulk_project_tags"></div>
+                        </div>    
+                    <div class="clear"></div>
+
+                    <div id="summary-container"><div class="text-center">      
+                                <div  class="alert alert-info alert-dismissable text-center inLineAlert">
+                                    <div class="">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                        
+                                            <div class="col-md-12">
+                                                <strong>Did you know ... </strong> If you hire at least one extra SERP bot not only do you get extra searches, you also receive access to:
+                                                <br>
+                                                <br>
+                                            </div>
+                                        
+                                        
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>SEARCH VOLUMES!!</strong></li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>NO ANNOYING MESSAGES!</strong></li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>Keywords checked automatically upto every 2 hours!</strong></li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>BING PROJECTS!</strong></li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>YOUTUBE PROJECTS!</strong></li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>Refresh keywords on demand!</strong></li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>UNLIMITED Check History</strong></li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> Unlimited Competitors URLs</li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> Automatic Realtime Email Alerts</li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> Mobile or Tablet Specific Projects</li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>More Reliable Service</strong></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>TOP 200 SERPS CHECKED!!</strong></li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>Specify a specific search location!</strong></li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>YAHOO PROJECTS!</strong></li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>Local Ranking Projects</strong></li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> Priority Keyword Processing (no more waiting!)</li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> Advanced Project Search Language Options</li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>API ACCESS</strong></li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> 3rd Party View Only Project Access</li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> Scheduled PDF Email Reports</li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> KARMA Upgrade (from supporting an awesome project)</li>
+                                                    <li><span class="glyphicon glyphicon-ok green"></span> <strong>No catches or hidden charges - cancel at any time!</strong></li>
+                                                </ul>
+                                            </div>
+                                            
+                                        
+                                            <div class="text-center col-md-12"><a class="btn btn-success" href="https://www.serprobot.com/user/manage.php" title="GO ON....BE AWESOME!">Hire another SERP bot!</a></div>
+                                        
+                                    </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+                    <div class="well-small text-center">
+                            <div class="col-md-12 text-center">
+                                <h1>Your SERP bot team</h1>
+                            </div>
+                            <hr>
+                            <div class="text-left">
+                                <div class="col-md-4">
+                                    <h2>Summary</h2>
+                                                                                                <span><strong># SERP Bots:</strong> 1<br>
+                                    <strong>Capacity:</strong> 25 <small>checks per 24 hours</small><br>
+                                    <strong>Total Number of Keywords:</strong> 2<br>
+                                    <strong>Estimated Workload:</strong> 2 <small>checks per 24 hours</small></span><br>
+                                                <strong>Next Searches Reset: </strong> <span title="in 22 hours, 8 minutes">2019-08-07 21:08:00</span><br>
+                                    <strong>Searches Remaining Today: </strong> 23<br>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width: 92%;">
+                                            92%
+                                        </div>
+                                    </div>
+                        
+                                    <div class="text-center">
+                                        <a class="btn btn-success" href="https://www.serprobot.com/user/manage.php">Manage your team</a>
+                                    </div>
+                                </div>
+                        
+                                                                                                <div class="col-md-4 clearfix">
+                                        <div class="col-md-4">
+                                            <img class="pull-left" src="https://www.serprobot.com/img/serp-bot-smallish.png" title="Hi I'm Tom" alt="Tom">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <span><strong>Name:</strong> Tom</span><br>
+                                            <span><strong>DOB:</strong> 2019-07-30</span><br>
+                                            <span><strong>Hobbies:</strong> crafts, morris dancing, cooking</span><br>
+                                            <span><strong>Capacity:</strong> 25</span><br>
+                                            <span><strong>Payment type:</strong> FREE</span><br>
+                                                                                                <span><strong>Contract expires:</strong> <br>NEVER</span><br><br>
+                                                                                    </div>
+                                        <div class="col-md-12 text-center">
+                                            <span><strong>Workload (estimated)</strong></span>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100" style="width: 8%;">
+                                                    8%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                <div class="col-md-4 text-center">
+                                    <h2>Need MORE searches?</h2>
+                                    <p><span>Hire extra SERP bots from just $4.99 a month.</span></p>
+                                    <a class="btn btn-danger" href="https://www.serprobot.com/user/manage.php" title="GO ON .. BE AWESOME!">Hire NOW!</a><br>
+                                    <br><a href="#" class="pops" data-container="body" data-toggle="popover" data-placement="top" data-content="Unfortunately we couldn't afford to keep SERPROBOT 100% free, the poor SERP bots were getting exhausted trying to keep up so.... we have switched to a 14 day trial for free and then crazy cheap pricing for ALL of our paid users if you hire one bot or 100 bots you will always get the best pricing we can offer!" data-original-title="" title="">EH? - I thought SERPROBOT was FREE??</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-md-12 text-center">
+                                <p>
+                                    <span><strong>SERP Bot Info:</strong><br>Your SERP bots all work as a team and share the load automatically, paid bots can perform 300 keyword checks per day and your free bot 25. Both by default will attempt to check each keyword every 24 hours (this can be changed to between every 2 hours and 365 days).<br>
+                                        If you set them too much work for one day they will start again, as soon as they can, from where they left off working through your keywords. <br>They will try their best not to repeatedly check any one twice before they have all been updated.<br>
+                                        <i><strong><i class="glyphicon glyphicon-warning-sign"></i> Please Note:</strong><br>
+                                            Projects with a higher update frequency are given priority, as we assume these are more important to you - This means that a project with a check frequency of every 24 hours will be checked in preference of any with a frequency of 3 days etc.<br>
+                                            One side effect of this is that in extreme situations where you dont have enough search capacity, lower frequency projects may not get checked at all - if every day your entire quota is used checking higher frequency projects - you can fix this by setting all of your projects to the same check frequency.</i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="text-center bordered-center">
+                                <div id="first" class="col-md-4">
+                                    <h2>Sharing Is Caring</h2>
+                                    <p>If you like this tool then <strong>PLEASE</strong> spread the word and let your friends know just how <strong>great</strong> this is.</p>
+                                    <div id="social" class="text-center">
+                                        <a href="https://www.facebook.com/serprobot" id="fb" target="_blank" title="facebook"></a>
+                                        <a href="https://twitter.com/serplab" id="twitter" target="_blank" title="twitter"></a>
+                                    </div>
+                                    <p><br>- p.s. its good karma too ;-)</p>
+                                </div>
+                            
+                                <div id="second" class="col-md-4">
+                                    <h2>How It Works</h2>
+                                    <p>All your <strong>SERP</strong> related questions answered, further information about how we check your rankings and make sure you get the most accurate results.<br>
+                                        <a href="https://www.serprobot.com/info.php">SERP Info</a></p>
+                                    <a href="#" title="Find out how our SERP bot works"><img src="https://www.serprobot.com/img/SERP-bot.png" class="alignleft" alt="SERP bot" id="serp-bot" title="Our SERP bot"></a>
+                                </div>
+                            
+                                <div id="third" class="col-md-4">
+                                    <h2>Tell Us About It</h2>
+                                    <p>It has taken our blood sweat and tears to bring you <strong>the best SERP checking tool</strong> we could make, but if you think we could improve something or you just want to say thanks then leave us a message.</p>
+                                    <form action="#" id="newsletter-form" method="get" accept-charset="UTF-8">
+                                        <fieldset>
+                                            <textarea name="karma" placeholder="Enter a message" id="subscribe" style="width:235px;"></textarea>
+                                            <input type="button" value="Go" onclick="send_feedback()">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
             </heartModel>
 
             <heartInfo></heartInfo>

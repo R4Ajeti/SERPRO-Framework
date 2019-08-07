@@ -10,3 +10,13 @@
     margin-right: 255px;
     margin-left: 255px;
 }
+.clear{
+    clear:left;
+    text-align:right;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.well {
+    background-color: transparent;
+}
+.inLineAlert {display:inline-block;}
