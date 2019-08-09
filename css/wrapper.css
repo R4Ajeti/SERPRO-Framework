@@ -30,13 +30,7 @@
 
 fieldset {
     display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
-    min-inline-size: min-content;
+    
 }
 
 textarea {
@@ -52,7 +46,8 @@ textarea {
     text-align: start;
     background-color: white;
     flex-direction: column;
-    resize: auto;
+    resize: both;
+    overflow: auto;
     cursor: text;
     white-space: pre-wrap;
     overflow-wrap: break-word;
@@ -82,7 +77,7 @@ button, input, select, textarea {
     font-size: 100%;
 }
 
-input[type="button" i] {
+button i {
     user-select: none;
     white-space: pre;
     align-items: flex-start;
