@@ -1733,3 +1733,11 @@ body {
     display: none;
   }
 }
+
+.displaced-right {
+  float: right;
+}
+
+.displaced-left {
+  float: left;
+}
