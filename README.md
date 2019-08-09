@@ -27,3 +27,7 @@ This is a microver project. Click to know more about [Microverse](https://www.mi
 #### Contact
 * +237 672272775
 * nyagaandrerroy@gmail.com
+* r4ajeti@gmail.com
+
+:¨·.·¨:   :¨·.·¨:
+`·. ƮϦαɳk Ψөu .·`
