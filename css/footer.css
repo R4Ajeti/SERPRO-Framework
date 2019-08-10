@@ -1,0 +1,33 @@
+#footer{
+    margin: 0px 0 0;
+    padding: 45px 0 70px;
+    border-top: 8px solid #b9e7ee;
+    background: #b9e7ee url(../img/bg-noise.jpg) repeat;
+}
+.pull-right{
+    float: right;
+}
+.pull-left{
+    float:left;
+}
+.toUpperCase{
+    text-transform: uppercase;
+}
+.text-whiteA a{
+    color: #b9e7ee;
+}
+
+#footer #copyright{border-top:1px solid #37b6c9;border-bottom:1px solid #37b6c9;padding:20px 0;position:relative;padding-bottom:30px;}
+#footer #copyright p,#footer #copyright a{font-size:11px;}
+#copyright a{padding:0 5px;}
+#copyright span:before{content:"/";}
+
+#footer #top-arrow{background:url("../img/arrow.png") no-repeat;display:block;height:59px;margin:-85px auto 20px auto;width:57px;}
+#footer-wrap{position:relative;}
+.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+.container:before,.container:after{display:table;content:" ";}
+.container:after{clear:both;}
+@media only screen and (max-width: 992px){#footer{margin-top: 80px;}}
+@media(min-width:768px){.container{width:750px;}}
+@media(min-width:992px){.container{width:970px;}#footer #copyright{padding-bottom:50px;}}
+@media(min-width:1200px){.container{width:1170px;}}
