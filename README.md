@@ -8,7 +8,7 @@ This is a microverse project. Click to know more about [Microverse](https://www.
 
 #### [Assignment link](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework)
 
-#### [View in broswer](https://r4ajeti.github.io/SERPRO-Framework/)
+#### [View in broswer](https://serpro-framework.herokuapp.com)
 
 
 # Language
