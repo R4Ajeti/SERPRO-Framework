@@ -2,14 +2,18 @@
 
 ## Project: HTML & CSS3: Design your own grid based framwork ([Serprobot](https://www.serprobot.com/user/dashboard.php)).
 
-This is a microver project. Click to know more about [Microverse](https://www.microverse.org/).
+This is a microverse project. Click to know more about [Microverse](https://www.microverse.org/).
 * The purpose of this project is to exercise on puting css components together to come up with a css framework.
 * Technology used are html, css and scss. 
 
 #### [Assignment link](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework)
 
-#### [View in broswer](https://roynyaga.github.io/microverse_building_with_backgrounds_and_radients/)
+#### [View in broswer](https://r4ajeti.github.io/SERPRO-Framework/)
 
+
+# Language
+
+HTML/CSS
 
 ## How the framework works
 
@@ -27,7 +31,12 @@ This is a microver project. Click to know more about [Microverse](https://www.mi
 #### Contact
 * +237 672272775
 * nyagaandrerroy@gmail.com
-* r4ajeti@gmail.com
+
+* +383 44903320
+* [E-mail](mailto:r4ajeti@gmail.com)
+* [Facebook](https://www.facebook.com/r4ajeti)
+* [Linkedin](https://www.linkedin.com/in/rinor-ajeti-79b6a8162)
+* [Twitter](https://twitter.com/r4ajeti)
 
 :¨·.·¨:   :¨·.·¨:
 `·. ƮϦαɳk Ψөu .·`
